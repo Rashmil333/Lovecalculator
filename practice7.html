@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Love calculator</title>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body style="background-image: url(Capture6.png);">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-8 col-lg-8 col-sm-8 col-8">
+				<div class="card" style="margin-top:200px; width:700px; margin-left:200px;">
+					<div class="card-body">
+						<h4 class="card-header text-center" style="color:white; background-color:tomato;">Love calculator</h4><br>
+						<div class="container" style="margin:10px;">
+							<input type="text" name="" placeholder="Soul name" id="name">
+						<input type="text" name="" placeholder="Soul name" id="lname" style="margin-left:200px;">
+							
+						</div><br>
+						<div class="container">
+							<button class="btn btn-success" style="margin-left:50px;width:500px; " onclick="checklovepercentage()">Calcuate</button>
+							
+						</div><br>
+						<div class="container">
+							<input type="text" name="" id="lovevalue" style="width: 250px; margin-left:170px; padding-left:100px;">
+							
+						</div><br><br>
+
+						<div class="card-footer" style="height:50px">
+							<p class="text-center"><strong>God Bless your Relationship.</strong></p>
+							
+						</div>
+						
+
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+
+	<script type="text/javascript">
+
+		function checklovepercentage(){
+
+			var name=document.getElementById('name').value;
+			var lname=document.getElementById('lname').value;
+
+			if(name==""){
+
+				alert('Names cannot be empty.');
+			}
+			else if( name.length<=2){
+
+				alert('Minimum length is 3.');
+
+			}
+			else if(!isNaN(name)){
+
+				alert('Numbers are not allowed')
+			}
+			else if(lname==""){
+
+				alert('Names cannot be empty.');
+			}
+			else if( lname.length<=2){
+
+				alert('Minimum length is 3.');
+
+			}
+			else if(!isNaN(lname)){
+
+				alert('Numbers are not allowed')
+			}
+			else{
+				var lovedata=Math.random()*100;
+			lovedata=Math.floor(lovedata)+"%";
+			document.getElementById('lovevalue').value=lovedata;
+
+
+
+
+
+
+			}
+			
+			
+
+			
+
+			
+
+			}
+
+			
+
+
+
+
+
+		
+		
+
+	</script>
+
+
+
+</body>
+</html>
